@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Md. Riad Ali Khan | Electrical & Electronics Engineer</title>
+
+<meta name="description" content="Professional portfolio of Md. Riad Ali Khan, Electrical & Electronics Engineer specializing in Power Engineering, Power BI, Excel, AI and Digital Solutions.">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#07111f;
+    color:#eef4ff;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:90%;
+    max-width:1150px;
+    margin:auto;
+}
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+    background:rgba(7,17,31,.92);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid #20324a;
+}
+
+.nav{
+    height:75px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:800;
+    color:#4dd4ff;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    color:#c9d6e8;
+    font-size:14px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#4dd4ff;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding-top:80px;
+    background:
+    radial-gradient(circle at 80% 20%,rgba(0,180,255,.15),transparent 35%),
+    #07111f;
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    gap:60px;
+    align-items:center;
+}
+
+.badge{
+    display:inline-block;
+    padding:8px 15px;
+    border:1px solid #28506c;
+    border-radius:30px;
+    color:#4dd4ff;
+    font-size:13px;
+    margin-bottom:20px;
+}
+
+h1{
+    font-size:clamp(42px,7vw,78px);
+    line-height:1;
+    margin-bottom:20px;
+}
+
+.gradient{
+    color:#4dd4ff;
+}
+
+.hero h2{
+    color:#c5d2e4;
+    font-size:23px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:650px;
+    color:#91a4bb;
+    font-size:17px;
+}
+
+.buttons{
+    margin-top:30px;
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:13px 22px;
+    border-radius:8px;
+    font-weight:bold;
+    border:1px solid #31516c;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#4dd4ff;
+    color:#06111c;
+    border-color:#4dd4ff;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.hero-card{
+    border:1px solid #233b55;
+    background:linear-gradient(145deg,#0d1d31,#091522);
+    padding:35px;
+    border-radius:25px;
+    box-shadow:0 20px 60px rgba(0,0,0,.3);
+}
+
+.hero-card h3{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.info{
+    padding:13px 0;
+    border-bottom:1px solid #20344c;
+    color:#9eb0c5;
+}
+
+.info strong{
+    color:#fff;
+}
+
+section{
+    padding:100px 0;
+}
+
+.section-title{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.section-subtitle{
+    color:#8296ad;
+    margin-bottom:45px;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.card{
+    background:#0c1a2b;
+    border:1px solid #20364e;
+    border-radius:18px;
+    padding:30px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#4dd4ff;
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#4dd4ff;
+}
+
+.card p{
+    color:#9dafc3;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.service-number{
+    color:#4dd4ff;
+    font-size:13px;
+    margin-bottom:15px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.skill{
+    padding:12px 17px;
+    background:#0d1c2e;
+    border:1px solid #29435d;
+    border-radius:8px;
+    color:#c9d7e8;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.project{
+    min-height:220px;
+}
+
+.project-tag{
+    color:#4dd4ff;
+    font-size:12px;
+    font-weight:bold;
+    text-transform:uppercase;
+    margin-bottom:12px;
+}
+
+.project h3{
+    font-size:24px;
+    margin-bottom:12px;
+}
+
+.contact{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.contact-item{
+    padding:20px 0;
+    border-bottom:1px solid #20364e;
+}
+
+.contact-item span{
+    display:block;
+    color:#7f94aa;
+    font-size:13px;
+    margin-bottom:5px;
+}
+
+.contact-item a{
+    color:#4dd4ff;
+}
+
+footer{
+    border-top:1px solid #20344c;
+    padding:30px 0;
+    color:#70859b;
+    text-align:center;
+}
+
+.mobile-menu{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+@media(max-width:800px){
+
+    nav ul{
+        display:none;
+        position:absolute;
+        top:75px;
+        left:0;
+        width:100%;
+        background:#07111f;
+        flex-direction:column;
+        padding:25px;
+        border-bottom:1px solid #20344c;
+    }
+
+    nav ul.active{
+        display:flex;
+    }
+
+    .mobile-menu{
+        display:block;
+    }
+
+    .hero-grid,
+    .about-grid,
+    .contact{
+        grid-template-columns:1fr;
+    }
+
+    .services,
+    .projects{
+        grid-template-columns:1fr;
+    }
+
+    h1{
+        font-size:48px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container nav">
+
+<a href="#home" class="logo">RIAAD KHAN</a>
+
+<nav>
+<div class="mobile-menu" onclick="toggleMenu()">☰</div>
+
+<ul id="menu">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#cv">CV</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+</div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+<div class="container hero-grid">
+
+<div>
+
+<span class="badge">ELECTRICAL & ELECTRONICS ENGINEER</span>
+
+<h1>
+Md. Riad<br>
+<span class="gradient">Ali Khan</span>
+</h1>
+
+<h2>
+BSc in EEE (Major in Power)
+</h2>
+
+<p>
+Electrical & Electronics Engineer focused on Power Engineering,
+Power BI, Excel, Data Analysis, AI tools, automation and digital solutions.
+</p>
+
+<div class="buttons">
+<a href="#projects" class="btn btn-primary">View Projects</a>
+<a href="#contact" class="btn">Contact Me</a>
+</div>
+
+</div>
+
+<div class="hero-card">
+
+<h3>Professional Profile</h3>
+
+<div class="info">
+<strong>Education</strong><br>
+BSc in Electrical & Electronics Engineering
+</div>
+
+<div class="info">
+<strong>Major</strong><br>
+Power Engineering
+</div>
+
+<div class="info">
+<strong>Core Focus</strong><br>
+Engineering • Data • AI • Digital Solutions
+</div>
+
+<div class="info">
+<strong>Location</strong><br>
+Bangladesh
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<section id="about">
+<div class="container">
+
+<h2 class="section-title">About Me</h2>
+
+<p class="section-subtitle">
+Engineering knowledge combined with modern digital skills.
+</p>
+
+<div class="about-grid">
+
+<div class="card">
+<h3>Who I Am</h3>
+<p>
+I am Md. Riad Ali Khan, an Electrical & Electronics Engineer
+with a BSc in EEE, majoring in Power Engineering.
+I am interested in engineering, data analysis, business intelligence,
+AI tools and digital workflow solutions.
+</p>
+</div>
+
+<div class="card">
+<h3>My Approach</h3>
+<p>
+I combine technical engineering knowledge with practical digital
+tools such as Power BI, Excel, SQL, AI platforms and automation
+to create useful and professional solutions.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section id="services">
+<div class="container">
+
+<h2 class="section-title">Services</h2>
+
+<p class="section-subtitle">
+Professional solutions for engineering and digital projects.
+</p>
+
+<div class="services">
+
+<div class="card">
+<div class="service-number">01</div>
+<h3>Electrical & Power Engineering</h3>
+<p>
+Electrical engineering support, power-related analysis and
+technical documentation.
+</p>
+</div>
+
+<div class="card">
+<div class="service-number">02</div>
+<h3>Power BI & Data Visualization</h3>
+<p>
+Interactive dashboards, KPI reporting and business data visualization.
+</p>
+</div>
+
+<div class="card">
+<div class="service-number">03</div>
+<h3>Excel & Data Analysis</h3>
+<p>
+Excel formulas, data cleaning, reporting and business analysis.
+</p>
+</div>
+
+<div class="card">
+<div class="service-number">04</div>
+<h3>AI & Automation</h3>
+<p>
+AI-assisted workflows, prompt engineering and digital automation solutions.
+</p>
+</div>
+
+<div class="card">
+<div class="service-number">05</div>
+<h3>WordPress & Web Solutions</h3>
+<p>
+Professional portfolio websites and responsive web solutions.
+</p>
+</div>
+
+<div class="card">
+<div class="service-number">06</div>
+<h3>Digital Solutions</h3>
+<p>
+Practical digital tools and workflows for modern business needs.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section id="skills">
+<div class="container">
+
+<h2 class="section-title">Skills</h2>
+
+<p class="section-subtitle">
+Technical and digital skills.
+</p>
+
+<div class="skills">
+
+<div class="skill">Electrical Engineering</div>
+<div class="skill">Power Engineering</div>
+<div class="skill">Power BI</div>
+<div class="skill">Microsoft Excel</div>
+<div class="skill">Data Analysis</div>
+<div class="skill">SQL</div>
+<div class="skill">AI Tools</div>
+<div class="skill">Automation</div>
+<div class="skill">WordPress</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">Prompt Engineering</div>
+
+</div>
+</div>
+</section>
+
+
+<section id="projects">
+<div class="container">
+
+<h2 class="section-title">Projects</h2>
+
+<p class="section-subtitle">
+Selected digital and analytical projects.
+</p>
+
+<div class="projects">
+
+<div class="card project">
+<div class="project-tag">Power BI</div>
+<h3>Sales Dashboard</h3>
+<p>
+Interactive Power BI dashboard designed to visualize sales,
+profit, products and regional performance.
+</p>
+</div>
+
+<div class="card project">
+<div class="project-tag">Excel</div>
+<h3>Business Data Analysis</h3>
+<p>
+Excel-based business analysis using formulas, data cleaning,
+summary reports and visualization.
+</p>
+</div>
+
+<div class="card project">
+<div class="project-tag">AI & Automation</div>
+<h3>AI-Powered Digital Workflow</h3>
+<p>
+AI-assisted workflow concept using modern AI tools and
+automation techniques.
+</p>
+</div>
+
+<div class="card project">
+<div class="project-tag">Web</div>
+<h3>Professional Portfolio Website</h3>
+<p>
+Responsive personal portfolio website designed to present
+professional skills, services and projects.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section id="cv">
+<div class="container">
+
+<h2 class="section-title">CV</h2>
+
+<p class="section-subtitle">
+Download my professional CV.
+</p>
+
+<div class="card">
+
+<h3>Md. Riad Ali Khan</h3>
+
+<p>
+Electrical & Electronics Engineer<br>
+BSc in EEE (Major in Power)
+</p>
+
+<div class="buttons">
+<a href="CV.pdf" class="btn btn-primary">Download CV</a>
+</div>
+
+<p style="margin-top:15px;color:#71869c;font-size:13px;">
+Note: Upload your CV as <strong>CV.pdf</strong> to this repository
+to activate the download button.
+</p>
+
+</div>
+
+</div>
+</section>
+
+
+<section id="contact">
+<div class="container">
+
+<h2 class="section-title">Contact</h2>
+
+<p class="section-subtitle">
+Let's connect for professional opportunities and projects.
+</p>
+
+<div class="contact">
+
+<div class="card">
+
+<div class="contact-item">
+<span>NAME</span>
+Md. Riad Ali Khan
+</div>
+
+<div class="contact-item">
+<span>PHONE</span>
+<a href="tel:+8801740050263">+880 1740-050263</a>
+</div>
+
+<div class="contact-item">
+<span>EMAIL</span>
+<a href="mailto:riadkhan867@gmail.com">
+riadkhan867@gmail.com
+</a>
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>Let's Work Together</h3>
+
+<p>
+If you are looking for an Electrical & Electronics Engineer
+with digital, data and AI skills, feel free to get in touch.
+</p>
+
+<div class="buttons">
+<a href="mailto:riadkhan867@gmail.com" class="btn btn-primary">
+Send Email
+</a>
+</div>
+
+</div>
+
+</div>
+</div>
+</section>
+
+</main>
+
+
+<footer>
+<div class="container">
+© 2026 Md. Riad Ali Khan. All rights reserved.
+</div>
+</footer>
+
+
+<script>
+function toggleMenu(){
+    document.getElementById("menu").classList.toggle("active");
+}
+
+document.querySelectorAll("#menu a").forEach(function(link){
+    link.addEventListener("click",function(){
+        document.getElementById("menu").classList.remove("active");
+    });
+});
+</script>
+
+</body>
+</html>
